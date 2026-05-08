@@ -114,7 +114,7 @@ button { font-family: inherit; }
 .icon-btn:active { opacity: .7; }
 
 /* Tab bar */
-.tabbar { display: flex; justify-content: space-around; align-items: flex-start; padding: 10px 12px 18px; background: rgba(10,10,10,0.96); backdrop-filter: blur(20px); border-top: 1px solid var(--yz-line); }
+.tabbar { display: flex; justify-content: space-around; align-items: flex-start; padding: 10px 12px 18px; padding-bottom: max(18px, env(safe-area-inset-bottom)); background: rgba(10,10,10,0.96); backdrop-filter: blur(20px); border-top: 1px solid var(--yz-line); flex: 0 0 auto; }
 .tab { display: flex; flex-direction: column; align-items: center; gap: 4px; color: var(--yz-fog); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; flex: 1; padding: 6px 0; }
 .tab.active { color: var(--yz-red); }
 .tab.active .tab-dot { opacity: 1; }
