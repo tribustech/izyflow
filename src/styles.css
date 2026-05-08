@@ -37,6 +37,7 @@ button { font-family: inherit; }
 /* Centered 390x844 device-frame on desktop; full-bleed on phones <= 430px */
 .yz-stage {
   min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -87,7 +88,8 @@ button { font-family: inherit; }
     box-shadow: none;
   }
   .yz-frame .yz-island,
-  .yz-frame .yz-home-indicator { display: none; }
+  .yz-frame .yz-home-indicator,
+  .yz-statusbar { display: none; }
 }
 
 .font-display { font-family: 'Bebas Neue', 'Oswald', 'Inter', sans-serif; letter-spacing: 0.02em; font-weight: 400; }

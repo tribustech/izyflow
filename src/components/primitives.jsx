@@ -48,7 +48,7 @@ export const icons = {
 export const MotoIllustration = ({ photo, className = '' }) => {
   if (!photo) return <div className={`bike-photo ${className}`} style={{ minHeight: 160 }}/>;
   return (
-    <div className={`bike-photo ${className}`} style={{ background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
+    <div className={`bike-photo ${className}`} style={{ background: '#ffffff', position: 'relative', overflow: 'hidden', width: '100%', height: '100%' }}>
       <img src={photo} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center', display: 'block' }}/>
       <div style={{ position: 'absolute', left: 14, right: 14, bottom: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', pointerEvents: 'none' }}>
         <div style={{ fontFamily: 'Bebas Neue', fontSize: 11, letterSpacing: '0.22em', color: '#b02112' }}>YZYFLOW</div>
@@ -60,7 +60,7 @@ export const MotoIllustration = ({ photo, className = '' }) => {
 };
 
 export const StatusBar = ({ tone = 'light' }) => (
-  <div style={{ height: 54, padding: '14px 28px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flex: '0 0 auto', color: tone === 'light' ? '#fff' : '#000' }}>
+  <div className="yz-statusbar" style={{ height: 54, padding: '14px 28px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flex: '0 0 auto', color: tone === 'light' ? '#fff' : '#000' }}>
     <div style={{ fontSize: 15, fontWeight: 600, fontFamily: 'system-ui', width: 80 }}>9:41</div>
     <div style={{ width: 126, flex: '0 0 auto' }}/>
     <div style={{ width: 80, display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: 5 }}>
