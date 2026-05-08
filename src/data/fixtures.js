@@ -1,13 +1,13 @@
 export const bikes = [
-  { id: 'b1', name: 'Iron 883', model: 'Sportster Iron', year: 2019, plate: 'B-217-YZY', lastService: 'Apr 02, 2026', daysSince: 35, color: 'Vivid Black', engine: '883cc V-Twin', registered: 'Jan 2024', nextService: 'Due in 4 weeks', status: 'Active', variant: 0, vin: '1HD1CR3115K***482', inService: false, photo: '/assets/images/street_glide_2015.jpg' },
-  { id: 'b2', name: 'Fat Boy 114', model: 'Softail Fat Boy', year: 2022, plate: 'B-330-FLW', lastService: 'Jan 18, 2026', daysSince: 109, color: 'Industrial Yellow', engine: '1868cc Milwaukee-Eight', registered: 'Aug 2024', nextService: 'On schedule', status: 'Active', variant: 1, vin: '1HD1YEK19NB***027', inService: false, photo: '/assets/images/fat_boy_2009.jpg' },
-  { id: 'b3', name: 'Road King', model: 'Touring Road King', year: 2017, plate: 'B-091-RKG', lastService: 'Oct 11, 2025', daysSince: 208, color: 'Twisted Cherry', engine: '1745cc Milwaukee-Eight 107', registered: 'Mar 2025', nextService: 'Overdue', status: 'In service', variant: 2, vin: '1HD1FRM19HB***311', inService: true, photo: '/assets/images/road_king_army.jpg' },
+  { id: 'b1', name: 'Iron 883', model: 'Sportster Iron', year: 2019, plate: 'B-217-YZY', lastService: 'Apr 02, 2026', daysSince: 35, color: 'Vivid Black', engine: '883cc V-Twin', registered: 'Jan 2024', nextService: 'Due in 4 weeks', status: 'Active', variant: 0, vin: '1HD1CR3115K***482', inService: false, photo: `${import.meta.env.BASE_URL}assets/images/street_glide_2015.jpg` },
+  { id: 'b2', name: 'Fat Boy 114', model: 'Softail Fat Boy', year: 2022, plate: 'B-330-FLW', lastService: 'Jan 18, 2026', daysSince: 109, color: 'Industrial Yellow', engine: '1868cc Milwaukee-Eight', registered: 'Aug 2024', nextService: 'On schedule', status: 'Active', variant: 1, vin: '1HD1YEK19NB***027', inService: false, photo: `${import.meta.env.BASE_URL}assets/images/fat_boy_2009.jpg` },
+  { id: 'b3', name: 'Road King', model: 'Touring Road King', year: 2017, plate: 'B-091-RKG', lastService: 'Oct 11, 2025', daysSince: 208, color: 'Twisted Cherry', engine: '1745cc Milwaukee-Eight 107', registered: 'Mar 2025', nextService: 'Overdue', status: 'In service', variant: 2, vin: '1HD1FRM19HB***311', inService: true, photo: `${import.meta.env.BASE_URL}assets/images/road_king_army.jpg` },
 ];
 
 export const member = {
   name: 'Teutzu Neagu',
   handle: '@teutzu',
-  photo: '/assets/images/profile_teutzu.jpg',
+  photo: `${import.meta.env.BASE_URL}assets/images/profile_teutzu.jpg`,
   initials: 'TN',
   city: 'București',
   memberSince: 'March 2024',
@@ -30,16 +30,16 @@ export const member = {
 };
 
 export const events = [
-  { id: 'e1', title: 'Spring Opening Ride', date: 'May 16', time: '09:00', location: 'Yzyflow HQ → Sinaia', going: 84, dist: '184 km', tag: 'Group ride', variant: 0, photo: '/assets/images/road_king_army.jpg' },
-  { id: 'e2', title: 'Bike Night & Burgers', date: 'May 22', time: '19:30', location: 'Șos. Odăii 243', going: 120, dist: 'On-site', tag: 'Meetup', variant: 3, photo: '/assets/images/street_glide_2015.jpg' },
-  { id: 'e3', title: 'Transfăgărășan Rally', date: 'Jun 07', time: '07:00', location: 'București → Bâlea Lac', going: 56, dist: '480 km', tag: 'Rally', variant: 2, photo: '/assets/images/ultra_cvo_2016.jpg' },
-  { id: 'e4', title: 'Custom Showdown', date: 'Jun 21', time: '12:00', location: 'Yzyflow Yard', going: 230, dist: 'On-site', tag: 'Show', variant: 1, photo: '/assets/images/fat_boy_2009.jpg' },
+  { id: 'e1', title: 'Spring Opening Ride', date: 'May 16', time: '09:00', location: 'Yzyflow HQ → Sinaia', going: 84, dist: '184 km', tag: 'Group ride', variant: 0, photo: `${import.meta.env.BASE_URL}assets/images/road_king_army.jpg` },
+  { id: 'e2', title: 'Bike Night & Burgers', date: 'May 22', time: '19:30', location: 'Șos. Odăii 243', going: 120, dist: 'On-site', tag: 'Meetup', variant: 3, photo: `${import.meta.env.BASE_URL}assets/images/street_glide_2015.jpg` },
+  { id: 'e3', title: 'Transfăgărășan Rally', date: 'Jun 07', time: '07:00', location: 'București → Bâlea Lac', going: 56, dist: '480 km', tag: 'Rally', variant: 2, photo: `${import.meta.env.BASE_URL}assets/images/ultra_cvo_2016.jpg` },
+  { id: 'e4', title: 'Custom Showdown', date: 'Jun 21', time: '12:00', location: 'Yzyflow Yard', going: 230, dist: 'On-site', tag: 'Show', variant: 1, photo: `${import.meta.env.BASE_URL}assets/images/fat_boy_2009.jpg` },
 ];
 
 export const news = [
-  { id: 'n1', cat: 'Build', title: 'Fat Boy 2009 — full cosmetic restoration', excerpt: 'Stripped, repainted, rechromed. Six months of work. See the before/after.', date: 'May 03', read: '4 min', variant: 2, photo: '/assets/images/fat_boy_2009_after.jpg' },
-  { id: 'n2', cat: 'Build', title: 'Ultra Limited CVO 2016 — top-down rebuild', excerpt: 'Owner brought it in tired. We sent it home looking better than the showroom.', date: 'Apr 28', read: '5 min', variant: 1, photo: '/assets/images/ultra_cvo_2016_after.jpg' },
-  { id: 'n3', cat: 'Drop', title: 'Street Glide 2015 just landed at the shop', excerpt: 'Murdered out, low miles, ready to ride. Members get first look.', date: 'Apr 21', read: '2 min', variant: 0, photo: '/assets/images/street_glide_2015.jpg' },
+  { id: 'n1', cat: 'Build', title: 'Fat Boy 2009 — full cosmetic restoration', excerpt: 'Stripped, repainted, rechromed. Six months of work. See the before/after.', date: 'May 03', read: '4 min', variant: 2, photo: `${import.meta.env.BASE_URL}assets/images/fat_boy_2009_after.jpg` },
+  { id: 'n2', cat: 'Build', title: 'Ultra Limited CVO 2016 — top-down rebuild', excerpt: 'Owner brought it in tired. We sent it home looking better than the showroom.', date: 'Apr 28', read: '5 min', variant: 1, photo: `${import.meta.env.BASE_URL}assets/images/ultra_cvo_2016_after.jpg` },
+  { id: 'n3', cat: 'Drop', title: 'Street Glide 2015 just landed at the shop', excerpt: 'Murdered out, low miles, ready to ride. Members get first look.', date: 'Apr 21', read: '2 min', variant: 0, photo: `${import.meta.env.BASE_URL}assets/images/street_glide_2015.jpg` },
 ];
 
 export const serviceHistory = [

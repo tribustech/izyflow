@@ -15,7 +15,7 @@ export default function NewsScreen({ go }) {
         <div style={{ padding: '0 20px 16px' }}>
           <div className="card" style={{ overflow: 'hidden', cursor: 'pointer' }}>
             <div style={{ height: 200, position: 'relative' }}>
-              <MotoIllustration photo="/assets/images/fat_boy_2009_after.jpg"/>
+              <MotoIllustration photo={`${import.meta.env.BASE_URL}assets/images/fat_boy_2009_after.jpg`}/>
               <div style={{ position: 'absolute', top: 14, left: 14 }}>
                 <span className="chip solid-red">Featured · Build</span>
               </div>

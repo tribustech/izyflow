@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { MotoIllustration, StatusBar } from '../components/primitives.jsx';
 
 const slides = [
-  { eyebrow: 'YZYFLOW · CHOPPERS', title: 'Welcome to the club.', body: 'Romanian motorcycle culture, your bike, our shop — in one app.', cta: 'Get started', photo: '/assets/images/road_king_army.jpg' },
-  { eyebrow: 'YOUR GARAGE', title: 'Every bike. Every service. One place.', body: 'Register your machines, upload photos, track every wrench turned.', cta: 'Continue', photo: '/assets/images/ultra_cvo_2016.jpg' },
-  { eyebrow: 'AT THE SHOP', title: 'Book service in 30 seconds.', body: 'Pick a slot at Yzyflow Choppers. We confirm the same day.', cta: 'Continue', photo: '/assets/images/fat_boy_2009.jpg' },
-  { eyebrow: 'THE COMMUNITY', title: 'Ride together.', body: 'Bike nights, group rides, rallies — never miss the next one.', cta: 'Join the club', photo: '/assets/images/street_glide_2015.jpg' },
+  { eyebrow: 'YZYFLOW · CHOPPERS', title: 'Welcome to the club.', body: 'Romanian motorcycle culture, your bike, our shop — in one app.', cta: 'Get started', photo: `${import.meta.env.BASE_URL}assets/images/road_king_army.jpg` },
+  { eyebrow: 'YOUR GARAGE', title: 'Every bike. Every service. One place.', body: 'Register your machines, upload photos, track every wrench turned.', cta: 'Continue', photo: `${import.meta.env.BASE_URL}assets/images/ultra_cvo_2016.jpg` },
+  { eyebrow: 'AT THE SHOP', title: 'Book service in 30 seconds.', body: 'Pick a slot at Yzyflow Choppers. We confirm the same day.', cta: 'Continue', photo: `${import.meta.env.BASE_URL}assets/images/fat_boy_2009.jpg` },
+  { eyebrow: 'THE COMMUNITY', title: 'Ride together.', body: 'Bike nights, group rides, rallies — never miss the next one.', cta: 'Join the club', photo: `${import.meta.env.BASE_URL}assets/images/street_glide_2015.jpg` },
 ];
 
 export default function OnboardingScreen({ go }) {
@@ -17,7 +17,7 @@ export default function OnboardingScreen({ go }) {
       <StatusBar/>
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '20px 24px 32px' }}>
         <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 96 }}>
-          <img src="/assets/logo.svg" alt="Yzyflow" style={{ height: 88, filter: 'brightness(0) invert(1)' }}/>
+          <img src={`${import.meta.env.BASE_URL}assets/logo.svg`} alt="Yzyflow" style={{ height: 88, filter: 'brightness(0) invert(1)' }}/>
           {!last && <div className="muted" style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)', fontSize: 13, letterSpacing: '0.1em', cursor: 'pointer' }} onClick={() => go('home')}>SKIP</div>}
         </div>
 
